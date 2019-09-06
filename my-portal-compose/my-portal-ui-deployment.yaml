@@ -1,0 +1,21 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: my-portal-ui
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        run: my-portal-ui
+    spec:
+      containers:
+      - name: my-portal-ui
+        image: satish2790/my-portal-ui:v3
+        resources:
+          requests:
+            cpu: 400m
+        ports:
+        - containerPort: 4200
+
+

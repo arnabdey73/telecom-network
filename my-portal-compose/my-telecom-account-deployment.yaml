@@ -1,0 +1,21 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: my-telecom-account
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        run: my-telecom-account
+    spec:
+      containers:
+      - name: my-telecom-account
+        image: satish2790/my-telecom-account:v1
+        resources:
+          requests:
+            cpu: 400m
+        ports:
+        - containerPort: 8282
+
+

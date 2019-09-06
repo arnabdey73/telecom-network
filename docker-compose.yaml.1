@@ -1,0 +1,60 @@
+version: '3'
+
+services:
+
+  my-telecom-portal:
+    image: arnabdey14/my-telecom-portal:v1 
+    ports:
+      - "443:8001"
+    environment:
+      - reschedule=on-node-failure
+      - restart=always
+    volumes:
+      - my-telecom-portal-volume:/home/cloud_user/openshiftDay3
+    networks:
+      - overlay
+    deploy:
+      mode: replicated
+      replicas: 3
+
+  my-telecom-account:
+    image: arnabdey14/my-telecom-account:v1
+    ports:
+      - "8443:8002"
+    volumes:
+      - my-telecom-account-volume:/home/cloud_user/openshiftday4
+    environment:    
+      - reschedule=on-node-failure
+       - restart=always
+    networks:
+      - overlay
+    deploy:
+      mode: replicated
+      replicas: 3
+    depends_on:
+      - my-telecom-portal
+
+  my-portal-ui:
+    image: arnabdey14/my-portal-ui:v2
+    ports:
+      - "80:4200"
+    volumes:
+      - my-portal-ui-volume:/home/cloud_user/openshiftday4-my-portal-ui
+    environment:
+      - reschedule=on-node-failure
+      - restart=always
+    networks:
+      - overlay
+    deploy:
+      mode: replicated
+      replicas: 3
+    depends_on:
+      - my-telecom-portal
+
+volumes:
+    my-telecom-portal-volume:
+    my-telecom-account-volume:
+    my-portal-ui-volume:
+
+networks:
+    overlay:

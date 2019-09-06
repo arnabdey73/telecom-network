@@ -1,0 +1,17 @@
+apiVersion: v2
+kind: Service
+metadata:
+ name: my-portal-ui
+ labels:
+   name: my-portal-ui
+spec:
+ type: NodePort
+ ports:
+   - port: 4200
+     name: proxyport
+     targetPort: 4200
+     nodePort: 30010
+     protocol: TCP
+ selector:
+   run: my-portal-ui
+

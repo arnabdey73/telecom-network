@@ -1,0 +1,21 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: my-telecom-portal
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        run: my-telecom-portal
+    spec:
+      containers:
+      - name: my-telecom-portal
+        image: satish2790/my-telecom-portal:v1
+        resources:
+          requests:
+            cpu: 400m
+        ports:
+        - containerPort: 8181
+
+
