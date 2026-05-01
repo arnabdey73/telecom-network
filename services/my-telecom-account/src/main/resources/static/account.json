@@ -1,0 +1,94 @@
+[
+  {
+    "myBill": {
+      "billDate": "07052019",
+      "billNumber": "FM100000",
+      "dueDate": "27052019",
+      "endDate": "01052019",
+      "monthCharge": "427.10",
+      "startDate": "02042019"
+    },
+    "myPhone": "9888888889",
+    "myPlan": {
+      "name": "399 rental"
+    },
+    "myUsage": {
+      "amount": 427.10,
+      "availInternet": 163.72,
+      "dataUnit": "GB",
+      "internetQuota": 174.21,
+      "smsQuota": 95,
+      "usedInternet": 10.49,
+      "usedSMS": 5
+    }
+  },
+  {
+    "myBill": {
+      "billDate": "12052019",
+      "billNumber": "FM100001",
+      "dueDate": "29052019",
+      "endDate": "06052019",
+      "monthCharge": "577.25",
+      "startDate": "07042019"
+    },
+    "myPhone": "8888888888",
+    "myPlan": {
+      "name": "499 rental"
+    },
+    "myUsage": {
+      "amount": 577.25,
+      "availInternet": 231.12,
+      "dataUnit": "GB",
+      "internetQuota": 274.21,
+      "smsQuota": 88,
+      "usedInternet": 43.09,
+      "usedSMS": 12
+    }
+  },
+  {
+    "myBill": {
+      "billDate": "07052019",
+      "billNumber": "FM100002",
+      "dueDate": "27052019",
+      "endDate": "01052019",
+      "monthCharge": "527.10",
+      "startDate": "02042019"
+    },
+    "myPhone": "7666666666",
+    "myPlan": {
+      "name": "749 rental"
+    },
+    "myUsage": {
+      "amount": 527.10,
+      "availInternet": 163.72,
+      "dataUnit": "GB",
+      "internetQuota": 174.21,
+      "smsQuota": 75,
+      "usedInternet": 10.49,
+      "usedSMS": 25
+    }
+  },
+  {
+    "myBill": {
+      "billDate": "07052019",
+      "billNumber": "FM100000",
+      "dueDate": "27052019",
+      "endDate": "01052019",
+      "monthCharge": "1427.15",
+      "startDate": "02042019"
+    },
+    "myPhone": "8678888888",
+    "myPlan": {
+      "name": "999 rental"
+    },
+    "myUsage": {
+      "amount": 1427.15,
+      "availInternet": 163.72,
+      "dataUnit": "GB",
+      "internetQuota": 174.21,
+      "smsQuota": 35,
+      "usedInternet": 10.49,
+      "usedSMS": 65
+    }
+  }
+]

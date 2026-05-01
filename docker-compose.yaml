@@ -1,49 +1,26 @@
-version: '3'
-
 services:
 
   my-telecom-portal:
-    image: arnabdey14/my-telecom-portal:v1 
+    build: ./services/my-telecom-portal
+    image: ghcr.io/arnabdey73/my-telecom-portal:dev
     ports:
-      - "443:8001"
-    environment:
-      - reschedule=on-node-failure
-      - restart=always
-    networks:
-      - overlay
-    deploy:
-      mode: replicated
-      replicas: 3
+      - "8181:8181"
+    restart: unless-stopped
 
   my-telecom-account:
-    image: arnabdey14/my-telecom-account:v1
+    build: ./services/my-telecom-account
+    image: ghcr.io/arnabdey73/my-telecom-account:dev
     ports:
-      - "8443:8002"
-    environment:    
-      - reschedule=on-node-failure
-       - restart=always
-    networks:
-      - overlay
-    deploy:
-      mode: replicated
-      replicas: 3
+      - "8282:8282"
+    restart: unless-stopped
     depends_on:
       - my-telecom-portal
 
   my-portal-ui:
-    image: arnabdey14/my-portal-ui:v2
+    build: ./services/my-portal-ui
+    image: ghcr.io/arnabdey73/my-portal-ui:dev
     ports:
-      - "80:8080"
-    environment:
-      - reschedule=on-node-failure
-      - restart=always
-    networks:
-      - overlay
-    deploy:
-      mode: replicated
-      replicas: 3
+      - "4200:4200"
+    restart: unless-stopped
     depends_on:
       - my-telecom-portal
-
-networks:
-    overlay:

@@ -1,0 +1,58 @@
+[
+  {
+    "address": {
+      "city": "bangalore",
+      "country": "india",
+      "line1": "flat 1204, wing9",
+      "line2": "sarjapur road",
+      "pincode": "560035",
+      "state": "karnataka"
+    },
+    "mobile": "9888888889",
+    "name": "satish",
+    "password": "satish123",
+    "userName": "satish"
+  },
+  {
+    "address": {
+      "city": "bangalore",
+      "country": "india",
+      "line1": "flat 201, wing5",
+      "line2": "electronic city",
+      "pincode": "560001",
+      "state": "karnataka"
+    },
+    "mobile": "8888888888",
+    "name": "manav",
+    "password": "manav123",
+    "userName": "manav"
+  },
+  {
+    "address": {
+      "city": "bangalore",
+      "country": "india",
+      "line1": "flat 201, keerthina apt",
+      "line2": "marathalli",
+      "pincode": "560037",
+      "state": "karnataka"
+    },
+    "mobile": "7666666666",
+    "name": "venkat",
+    "password": "venkat123",
+    "userName": "venkat"
+  },
+  {
+    "address": {
+      "city": "bangalore",
+      "country": "india",
+      "line1": "flat 1121, krisha grande",
+      "line2": "varthur",
+      "pincode": "560037",
+      "state": "karnataka"
+    },
+    "mobile": "8678888888",
+    "name": "bharath",
+    "password": "bharath123",
+    "userName": "bharath"
+  }
+]

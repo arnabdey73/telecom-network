@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-telecom-account
+  labels:
+    app.kubernetes.io/name: my-telecom-account
+    app.kubernetes.io/component: backend
+    app.kubernetes.io/part-of: telecom-network
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 8282
+      targetPort: 8282
+      protocol: TCP
+  loadBalancerSourceRanges:
+    - 0.0.0.0/0
+  selector:
+    app.kubernetes.io/name: my-telecom-account

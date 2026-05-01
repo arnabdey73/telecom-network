@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-telecom-account
+  labels:
+    app.kubernetes.io/name: my-telecom-account
+    app.kubernetes.io/component: backend
+    app.kubernetes.io/part-of: telecom-network
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: my-telecom-account
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: my-telecom-account
+        app.kubernetes.io/component: backend
+        app.kubernetes.io/part-of: telecom-network
+    spec:
+      containers:
+        - name: my-telecom-account
+          image: ghcr.io/arnabdey73/my-telecom-account:latest
+          ports:
+            - containerPort: 8282
+          resources:
+            requests:
+              cpu: 400m

@@ -1,0 +1,32 @@
+# Build output
+**/target/
+**/dist/
+**/.angular/
+
+# Node
+**/node_modules/
+
+# Maven wrapper jar (downloaded on first run)
+.mvn/wrapper/maven-wrapper.jar
+
+# IDE
+.idea/
+.vscode/
+*.iml
+.classpath
+.project
+.settings/
+.springBeans
+
+# OS
+.DS_Store
+Thumbs.db
+*.stackdump
+
+# Editor
+*.swp
+*.swo
+*~
+
+# Logs
+*.log

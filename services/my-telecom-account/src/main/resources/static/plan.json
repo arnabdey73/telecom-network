@@ -1,0 +1,47 @@
+[
+  {
+    "name": "399 rental",
+    "packs": {
+      "local_std_calls": "unlimited",
+      "monthly_4g_3g_internet": "20 GB",
+      "sms_per_day": "100 SMS",
+      "roaming_outgoing_calls": "unlimited",
+      "roaming_incoming_calls": "unlimited"
+    }
+  },
+  {
+    "name": "499 rental",
+    "packs": {
+      "local_std_calls": "unlimited",
+      "monthly_4g_3g_internet": "75 GB",
+      "sms_per_day": "100 SMS",
+      "roaming_outgoing_calls": "unlimited",
+      "roaming_incoming_calls": "unlimited",
+      "secure": "free"
+    }
+  },
+  {
+    "name": "749 rental",
+    "packs": {
+      "local_std_calls": "unlimited",
+      "monthly_4g_3g_internet": "125 GB",
+      "sms_per_day": "100 SMS",
+      "roaming_outgoing_calls": "unlimited",
+      "roaming_incoming_calls": "unlimited",
+      "secure": "free",
+      "free_family_connection": "1"
+    }
+  },
+  {
+    "name": "999 rental",
+    "packs": {
+      "local_std_calls": "unlimited",
+      "monthly_4g_3g_internet": "150 GB",
+      "sms_per_day": "100 SMS",
+      "roaming_outgoing_calls": "unlimited",
+      "roaming_incoming_calls": "unlimited",
+      "secure": "free",
+      "free_family_connection": "3"
+    }
+  }
+]
